@@ -1,0 +1,20 @@
+.Shop .about-us-div{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.Shop button{
+    background-color: #6a9739;
+}
+.text-green-color{
+    color: #6a9739;
+}
+
+.card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

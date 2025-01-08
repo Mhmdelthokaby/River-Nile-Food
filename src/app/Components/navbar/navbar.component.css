@@ -1,0 +1,16 @@
+.nav-link:hover{
+    color: #8bc34a !important;
+
+}
+.active-link {
+    color: #6a9739 !important; /* Apply the green color */
+    font-weight: bold; /* Optional: Make the active link bold */
+  }
+
+.color-green{
+    color: #6a9739 !important; /* Apply the green color */
+
+}
+.bg-green{
+    background: #6a9739;
+}

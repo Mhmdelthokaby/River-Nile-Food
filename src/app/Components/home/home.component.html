@@ -1,0 +1,102 @@
+<section class="Slider-Section">
+    <div class="container p-5">
+        <div class="row row-cols-sm-1 row-cols-md-2">
+            <div>
+                <img src="assets/images/oil-home.png"  alt="">
+            </div>
+            <div class="d-flex align-items-center">
+                <div >
+                    <p class="text-black fs-5">Best Quality Products</p>
+                    <h2 class="fw-medium display-3">Join The River Nile Food
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolor earum animi, explicabo ex amet totam nihil beatae aperiam nostrum?</p>
+                    <a class="btn text-white main-bg-color fs-5"><span class="px-1"><i class="fa-solid fa-cart-shopping"></i></span> Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="shipping-section py-5">
+    <div class="container">
+        <div class="row text-center">
+            <!-- Free Shipping -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="shipping-item">
+                    <i class="fas fa-truck fa-3x mb-3"></i>
+                    <h4>Free Shipping</h4>
+                </div>
+            </div>
+
+            <!-- 100% Guarantee -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="shipping-item">
+                    <i class="fas fa-check-circle fa-3x mb-3"></i>
+                    <h4>100% Guarantee</h4>
+                </div>
+            </div>
+
+            <!-- At Lowest Price -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="shipping-item">
+                    <i class="fas fa-tag fa-3x mb-3"></i>
+                    <h4>At Lowest Price</h4>
+                </div>
+            </div>
+
+            <!-- No Questions Asked -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="shipping-item">
+                    <i class="fas fa-comments fa-3x mb-3"></i>
+                    <h4>No Questions Asked</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Best-Selling">
+    <div class="container py-5 vstack gap-4">
+        <h2 class="text-center py-2 after-line">Best Selling Products</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <ng-container *ngFor="let product of products">
+          <app-card-product [product]="product"></app-card-product>
+        </ng-container>
+        </div>
+    </div>
+</section>
+
+<section class="Offer py-3">
+    <div class="bg-dark text-white py-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <p class="lead fs-1">Get 25% Off On Your First Purchase!</p>
+            </div>
+            <div>
+                <a class="btn text-white main-bg-color fs-5 py-3 px-4"><span class="px-1"><i class="fa-solid fa-cart-shopping"></i></span> Shop Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Blogs">
+    <div class="container py-5 vstack gap-4">
+      <h2 class="text-center py-2 after-line">Latest Blogs</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Loop through blogs and create a card for each -->
+        <div class="col" *ngFor="let blog of blogs">
+          <div class="card h-100">
+            <img [src]="blog.image" class="card-img-top" [alt]="blog.title" />
+            <div class="card-body">
+              <h5 class="card-title">{{ blog.title }}</h5>
+              <p class="card-text text-muted">
+                <small>Published on: {{ blog.DateTime }}</small>
+              </p>
+              <p class="card-text">{{ blog.content }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

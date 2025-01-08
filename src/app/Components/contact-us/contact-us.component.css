@@ -1,0 +1,33 @@
+.Contact-Us{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+.Contact-Us::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.08);  */
+    background-image: url('../../../assets/images/leaves-free-img.png'); /* Background image */
+    background-position: bottom right; /* Position of the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: 15% auto; /* Size of the background image */
+    z-index: 1; /* Ensure it's above the section content */
+    pointer-events: none; /* Allow clicks to pass through */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+.green-color{
+    background-color: #6a9739 !important;
+    border: #6a9739 1px solid;
+}
+.green-color:hover{
+    background-color: white !important; 
+    color: #6a9739 !important;
+}
+.Contact-Us .Connection i{
+    color: #6a9739;
+}

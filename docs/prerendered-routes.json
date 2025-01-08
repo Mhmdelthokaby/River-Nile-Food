@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "/River-Nile-Food": {},
+    "/River-Nile-Food/about": {},
+    "/River-Nile-Food/blog": {},
+    "/River-Nile-Food/contact-us": {},
+    "/River-Nile-Food/home": {},
+    "/River-Nile-Food/product": {},
+    "/River-Nile-Food/shop": {},
+    "/River-Nile-Food/tours": {}
+  }
+}
